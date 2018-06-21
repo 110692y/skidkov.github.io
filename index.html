@@ -11,14 +11,14 @@
 
         table {
             text-align: center;
-            /*width: 50%;*/
+            width: 50%;
             border: 2px solid black;
             border-spacing: 0px;
 
         }
 
         body {
-            background-color: oldlace;
+            background-color: rgba(154, 66, 9, 0.43);
             margin: 0 auto;
 
         }
@@ -28,7 +28,7 @@
         }
 
         tr.main {
-            background-color: #faacb1;
+            background-color: #75af98;
             font-weight: bold;
         }
 
@@ -41,6 +41,7 @@
             height: 216px;
             position: relative;
             background-image: url("https://coverfiles.alphacoders.com/380/38033.jpg");
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 5);
         }
 
         #bird {
@@ -72,10 +73,10 @@
         <br/>
         <table>
             <tr class=main>
-                <td>Name</td>
-                <td>Age</td>
-                <td>Login</td>
-                <td>Password</td>
+                <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/profile24.png"><br/>Name</td>
+                <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/custom51_100/redcross24.png"><br/>Age</td>
+                <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/portals24.png"><br/>Login</td>
+                <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/custom51_100/keys24.png"><br/>Password</td>
             </tr>
             <tr class=other>
                 <td><p class="jack"></p></td>
@@ -99,15 +100,11 @@
 
 
     <div>
-        <button style="width: 50px; height: 50px" onclick="prev();"> Prev</button>
+        <button style="width: 50px; height: 50px" onclick="prev();"> <img src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_left.gif"></button>
         <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg"
-             width="200px" height="100px"/>
-        <button style="width: 50px; height: 50px" onclick="next();"> Next</button>
+             width="200px" height="100px" style=" border-radius: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 5);"/>
+        <button style="width: 50px; height: 50px" onclick="next();"> <img src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_right.gif"></button>
     </div>
-    <div id="start"> Hello</div>
-
-    <br/>
-
     <script src="demo.js"></script>
 </center>
 </body>

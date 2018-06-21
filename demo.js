@@ -1,5 +1,5 @@
-// var user = prompt("Please enter your name");
-// if (user=="admin") {
+var user = prompt("Please enter your name");
+if (user=="admin") {
 var t = setInterval(move, 1);
 var pos = 0;
 //var box = document.getElementById("box");
@@ -55,11 +55,9 @@ array2[1].innerHTML = jessy.age;
 array2[2].innerHTML = jessy.login;
 array2[3].innerHTML = jessy.password;
 
-var thisDiv = document.getElementById('paintBackground');
-
 function paint() {
     var colorArray = new Array('green', 'yellow', 'red');
-    thisDiv.style.backgroundColor = colorArray[Math.floor(Math.random() * 3)];
+    $('tr.main').css({'backgroundColor': colorArray[Math.floor(Math.random() * 3)]});
 }
 
     var images = [
@@ -86,10 +84,5 @@ function paint() {
         }
         slider.src = images[num];
     }
-$(document).ready(function() {
-    $("#start").html("Go");
 
-});
-
-
-// }
+}
