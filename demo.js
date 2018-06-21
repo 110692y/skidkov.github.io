@@ -19,7 +19,11 @@ function move() {
 }
 
 var he2 = document.getElementById('shakeBody');
-he2.addEventListener("click", move);
+he2.addEventListener("click", reload);
+
+function  reload() {
+    location.reload();
+}
 
 function shakeBody() {
     he2.style.color = 'red';
