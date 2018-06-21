@@ -40,7 +40,7 @@ function person(name, age, login, password) {
     } // Добавить возраст
 }
 
-var jack = new person("Jack", 800, "gggglw@mail.ru", 433555);
+var jack = new person("Jack", 8000, "gggglw@mail.ru", 433555);
 var jessy = new person("Jessy", 52, "waaaalw@mail.ru", 245754);
 
 var array = document.getElementsByClassName("jack");
