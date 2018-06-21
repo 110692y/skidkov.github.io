@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+    <style>
+        td {
+            border: solid 1px black;
+            width: 30px;
+        }
+
+        table {
+            text-align: center;
+            /*width: 50%;*/
+            border: 2px solid black;
+            border-spacing: 0px;
+
+        }
+
+        body {
+            background-color: oldlace;
+            margin: 0 auto;
+
+        }
+
+        tr {
+            height: 30px;
+        }
+
+        tr.main {
+            background-color: #faacb1;
+            font-weight: bold;
+        }
+
+        tr.other {
+            background-color: snow;
+        }
+
+        #container {
+            width: 100%;
+            height: 216px;
+            position: relative;
+            background-image: url("https://coverfiles.alphacoders.com/380/38033.jpg");
+        }
+
+        #bird {
+            width: 216px;
+            /*height: 216px;*/
+            position: absolute;
+            transform: scale(-1, 1);
+            top: 5px;
+        }
+
+        #paintBackground {
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+<center>
+    <div id="container">
+
+        <div id="text" style="position: relative; top:40%;color: white"><h1 style=" text-shadow: black 2px 2px 0px;">HELLO!</h1></div>
+
+        <img id="bird" src="https://orig00.deviantart.net/e404/f/2016/289/b/d/flying_bird_gif_by_idiosyncraticataraxy-dal9hu1.gif"> </img>
+    </div>
+
+    <h2 id="shakeBody" onmouseover="shakeBody();"> Here's body </h2>
+
+    <div id="paintBackground">
+        <br/>
+        <table>
+            <tr class=main>
+                <td>Name</td>
+                <td>Age</td>
+                <td>Login</td>
+                <td>Password</td>
+            </tr>
+            <tr class=other>
+                <td><p class="jack"></p></td>
+                <td><p class="jack"></p></td>
+                <td><p class="jack"></p></td>
+                <td><p class="jack"></p></td>
+            </tr>
+            <tr class=other>
+                <td><p class="jessy"></p></td>
+                <td><p class="jessy"></p></td>
+                <td><p class="jessy"></p></td>
+                <td><p class="jessy"></p></td>
+            </tr>
+        </table>
+        <br/>
+    </div>
+    <input type="button" style="align: center" value="Paint Me!" id="paintButton" onclick="paint();"/>
+
+    <br/>
+    <br/>
+
+
+    <div>
+        <button style="width: 50px; height: 50px" onclick="prev();"> Prev</button>
+        <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg"
+             width="200px" height="100px"/>
+        <button style="width: 50px; height: 50px" onclick="next();"> Next</button>
+    </div>
+    <div id="start"> Hello</div>
+
+    <br/>
+
+    <script src="demo.js"></script>
+</center>
+</body>
+</html>
