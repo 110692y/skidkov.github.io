@@ -4,16 +4,18 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
 
     <style>
-        td {
+        #info td {
             border: solid 1px darkslategrey;
         }
-        table {
+
+        #info {
             text-align: center;
             width: 65%;
             border: 1px solid black;
             border-spacing: 0px;
             table-layout: fixed;
         }
+
         body {
             background-color: rgba(154, 66, 9, 0.43);
         }
@@ -45,6 +47,14 @@
             transform: scale(-1, 1);
             top: 5px;
         }
+
+        #notes {
+            background-image: url("http://allfreedesigns.com/wp-content/uploads/2017/04/lined-paper-texture-1.jpg");
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 5);
+            width:550px;
+            height: 465px;
+
+        }
     </style>
 </head>
 
@@ -52,48 +62,71 @@
 <center>
     <div id="container">
 
-        <div id="text" style="position: relative; top:40%;color: white"><h1 style=" text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);">Welcome to Forest!</h1></div>
+        <div id="text" style="position: relative; top:40%;color: white"><h1
+                style=" text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);">Welcome to Forest!</h1></div>
 
-        <img id="bird" src="https://orig00.deviantart.net/e404/f/2016/289/b/d/flying_bird_gif_by_idiosyncraticataraxy-dal9hu1.gif"> </img>
+        <img id="bird"
+             src="https://orig00.deviantart.net/e404/f/2016/289/b/d/flying_bird_gif_by_idiosyncraticataraxy-dal9hu1.gif"> </img>
     </div>
 
-    <h2 id="shakeBody" onmouseover="shakeBody();"> Here's body </h2>
+    <h2 id="shakeBody" onmouseover="shakeBody();"> Foresters List: </h2>
 
-        <br/>
-        <table>
-            <tr class=main>
-                <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/profile24.png"><br/>Name</td>
-                <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/custom51_100/redcross24.png"><br/>Age</td>
-                <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/portals24.png"><br/>Login</td>
-                <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/custom51_100/keys24.png"><br/>Password</td>
-            </tr>
-            <tr class=other>
-                <td><p class="person1"></p></td>
-                <td><p class="person1"></p></td>
-                <td><p class="person1"></p></td>
-                <td><p class="person1"></p></td>
-            </tr>
-            <tr class=other>
-                <td><p class="person2"></p></td>
-                <td><p class="person2"></p></td>
-                <td><p class="person2"></p></td>
-                <td><p class="person2"></p></td>
-            </tr>
-        </table>
-        <br/>
-    <input type="button" style="width: 100px; height:50px; border-radius: 5px; align: center" value="Paint Me!" id="paintButton" onclick="paint();"/>
+    <br/>
+    <table id="info">
+        <tr class=main>
+            <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/profile24.png"><br/>Name</td>
+            <td><img
+                    src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/custom51_100/redcross24.png"><br/>Age
+            </td>
+            <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/portals24.png"><br/>Login</td>
+            <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/custom51_100/keys24.png"><br/>Password
+            </td>
+        </tr>
+        <tr class=other>
+            <td><p class="person1"></p></td>
+            <td><p class="person1"></p></td>
+            <td><p class="person1"></p></td>
+            <td><p class="person1"></p></td>
+        </tr>
+        <tr class=other>
+            <td><p class="person2"></p></td>
+            <td><p class="person2"></p></td>
+            <td><p class="person2"></p></td>
+            <td><p class="person2"></p></td>
+        </tr>
+    </table>
+    <br/>
+    <input type="button" style="width: 100px; height:50px; border-radius: 5px; align: center" value="Paint Me!"
+           id="paintButton" onclick="paint();"/>
 
     <br/>
     <br/>
 
 
-    <div id="slides">
-        <button style="width: 40px; height: 40px" onclick="prev();"> <img src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_left.gif"></button>
-        <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg"
-             width="200px" height="100px" style=" border-radius: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 5);"/>
-        <button style="width: 40px; height:40px" onclick="next();"> <img src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_right.gif"></button>
-    </div>
+    <table id="slides">
+        <tr>
+            <td>
+                <button style="width: 40px; height: 40px" onclick="prev();"><img
+                        src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_left.gif">
+                </button>
+            </td>
+            <td><img id="slider" src="https://www.qualitychurchmedia.com/wp-content/uploads/edd/welcome-home-green-blank-960x540.jpg"
+                     width="200px" height="100px"
+                     style=" border-radius: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 5);"/>
+            </td>
+            <td>
+                <button style="width: 40px; height:40px" onclick="next();"><img
+                        src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_right.gif">
+                </button>
+            </td>
+        </tr>
+    </table>
+    <br/>
     <script src="demo.js"></script>
+
+    <div id="notes"><br/><br/>Sandbox:<br/>
+        Text of Button:<div id="sandbox">Sandbox: <p> input here</p></div>
+    </div>
 </center>
 </body>
 </html>

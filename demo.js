@@ -14,14 +14,14 @@ function move() {
     }
     else {
         pos += 2;
-        $("#bird").css({"left": pos +'px'});
+        $("#bird").css({"left": pos + 'px'});
     }
 }
 
 var he2 = document.getElementById('shakeBody');
 he2.addEventListener("click", reload);
 
-function  reload() {
+function reload() {
     location.reload();
 }
 
@@ -56,33 +56,40 @@ array2[2].innerHTML = person2.login;
 array2[3].innerHTML = person2.password;
 
 function paint() {
-    var colorArray = new Array('cornflowerblue', 'firebrick','darkseagreen');
+    var colorArray = new Array('cornflowerblue', 'firebrick', 'darkseagreen');
     $('tr.main').css({'backgroundColor': colorArray[Math.floor(Math.random() * 3)]});
 }
 
-    var images = [
-        "http://www.sololearn.com/uploads/slider/1.jpg",
-        "http://www.sololearn.com/uploads/slider/2.jpg",
-        "http://www.sololearn.com/uploads/slider/3.jpg"
-    ];
-    var num = 0;
+var images = [
+    "https://www.qualitychurchmedia.com/wp-content/uploads/edd/welcome-home-green-blank-960x540.jpg",
+    "http://lh4.ggpht.com/_digKpWXDH-k/TFbRPCYxpFI/AAAAAAAAAIg/f_97g2_8VOs/s800/12.jpg",
+    "http://www.robertodemicheli.com/album_test/UK%20Countryside/slides/IMG_0366H.jpg"
+];
+var num = 0;
 
-    function next() {
-        var slider = document.getElementById("slider");
-        num++;
-        if (num >= images.length) {
-            num = 0;
-        }
-        slider.src = images[num];
+function next() {
+    var slider = document.getElementById("slider");
+    num++;
+    if (num >= images.length) {
+        num = 0;
     }
+    slider.src = images[num];
+}
 
-    function prev() {
-        var slider = document.getElementById("slider");
-        num--;
-        if (num < 0) {
-            num = images.length - 1;
-        }
-        slider.src = images[num];
+function prev() {
+    var slider = document.getElementById("slider");
+    num--;
+    if (num < 0) {
+        num = images.length - 1;
     }
+    slider.src = images[num];
+}
+var t = $("#paintButton").val();
+
+$(function() {
+    $("#sandbox").text(t);
+});
+
+
 //
 // }
