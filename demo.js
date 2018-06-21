@@ -1,5 +1,5 @@
-var user = prompt("Please enter your name");
-if (user=="admin") {
+// var user = prompt("Please enter your name");
+// if (user=="admin") {
 var t = setInterval(move, 1);
 var pos = 0;
 //var box = document.getElementById("box");
@@ -7,7 +7,7 @@ var pos = 0;
 var screenW = window.innerWidth;
 
 function move() {
-    if (pos >= screenW - 216) {
+    if (pos >= screenW - 150) {
         clearInterval(t);
         // $("#bird").attr("src","http://neman96.ru/wp-content/uploads/2015/04/%D0%BF%D1%83%D1%81%D1%82%D0%BE%D0%B5-%D0%BE%D0%BA%D0%BD%D0%BE-%D0%B4%D0%BB%D1%8F-%D0%B1%D0%BB%D0%BE%D0%BA%D0%B0.png");
         $("#bird").hide();
@@ -40,23 +40,23 @@ function person(name, age, login, password) {
     } // Добавить возраст
 }
 
-var jack = new person("Doc", 80000, "gggglw@mail.ru", 433555);
-var jessy = new person("Jessy", 52, "waaaalw@mail.ru", 245754);
+var person1 = new person("Mark Goldblatt", 54, "gggglw@mail.ru", 433555);
+var person2 = new person("Robert Mark Kamen", 52, "waaaalw@mail.ru", 245754);
 
-var array = document.getElementsByClassName("jack");
-array[0].innerHTML = jack.name;
-array[1].innerHTML = jack.age;
-array[2].innerHTML = jack.login;
-array[3].innerHTML = jack.password;
+var array = document.getElementsByClassName("person1");
+array[0].innerHTML = person1.name;
+array[1].innerHTML = person1.age;
+array[2].innerHTML = person1.login;
+array[3].innerHTML = person1.password;
 
-var array2 = document.getElementsByClassName("jessy");
-array2[0].innerHTML = jessy.name;
-array2[1].innerHTML = jessy.age;
-array2[2].innerHTML = jessy.login;
-array2[3].innerHTML = jessy.password;
+var array2 = document.getElementsByClassName("person2");
+array2[0].innerHTML = person2.name;
+array2[1].innerHTML = person2.age;
+array2[2].innerHTML = person2.login;
+array2[3].innerHTML = person2.password;
 
 function paint() {
-    var colorArray = new Array('green', 'yellow', 'red');
+    var colorArray = new Array('cornflowerblue', 'firebrick','darkseagreen');
     $('tr.main').css({'backgroundColor': colorArray[Math.floor(Math.random() * 3)]});
 }
 
@@ -84,5 +84,5 @@ function paint() {
         }
         slider.src = images[num];
     }
-
-}
+//
+// }

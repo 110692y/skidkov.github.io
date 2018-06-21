@@ -5,22 +5,17 @@
 
     <style>
         td {
-            border: solid 1px black;
-            width: 30px;
+            border: solid 1px darkslategrey;
         }
-
         table {
             text-align: center;
-            width: 50%;
-            border: 2px solid black;
+            width: 65%;
+            border: 1px solid black;
             border-spacing: 0px;
-
+            table-layout: fixed;
         }
-
         body {
             background-color: rgba(154, 66, 9, 0.43);
-            margin: 0 auto;
-
         }
 
         tr {
@@ -38,22 +33,17 @@
 
         #container {
             width: 100%;
-            height: 216px;
+            height: 150px;
             position: relative;
             background-image: url("https://coverfiles.alphacoders.com/380/38033.jpg");
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 5);
         }
 
         #bird {
-            width: 216px;
-            /*height: 216px;*/
+            width: 150px;
             position: absolute;
             transform: scale(-1, 1);
             top: 5px;
-        }
-
-        #paintBackground {
-            width: 80%;
         }
     </style>
 </head>
@@ -62,14 +52,13 @@
 <center>
     <div id="container">
 
-        <div id="text" style="position: relative; top:40%;color: white"><h1 style=" text-shadow: black 2px 2px 0px;">HELLO!</h1></div>
+        <div id="text" style="position: relative; top:40%;color: white"><h1 style=" text-shadow: 2px 2px 7px rgba(0, 0, 0, 1);">Welcome to Forest!</h1></div>
 
         <img id="bird" src="https://orig00.deviantart.net/e404/f/2016/289/b/d/flying_bird_gif_by_idiosyncraticataraxy-dal9hu1.gif"> </img>
     </div>
 
     <h2 id="shakeBody" onmouseover="shakeBody();"> Here's body </h2>
 
-    <div id="paintBackground">
         <br/>
         <table>
             <tr class=main>
@@ -79,31 +68,30 @@
                 <td><img src="http://blogforce9dev-developer-edition.ap1.force.com/img/icon/custom51_100/keys24.png"><br/>Password</td>
             </tr>
             <tr class=other>
-                <td><p class="jack"></p></td>
-                <td><p class="jack"></p></td>
-                <td><p class="jack"></p></td>
-                <td><p class="jack"></p></td>
+                <td><p class="person1"></p></td>
+                <td><p class="person1"></p></td>
+                <td><p class="person1"></p></td>
+                <td><p class="person1"></p></td>
             </tr>
             <tr class=other>
-                <td><p class="jessy"></p></td>
-                <td><p class="jessy"></p></td>
-                <td><p class="jessy"></p></td>
-                <td><p class="jessy"></p></td>
+                <td><p class="person2"></p></td>
+                <td><p class="person2"></p></td>
+                <td><p class="person2"></p></td>
+                <td><p class="person2"></p></td>
             </tr>
         </table>
         <br/>
-    </div>
-    <input type="button" style="align: center" value="Paint Me!" id="paintButton" onclick="paint();"/>
+    <input type="button" style="width: 100px; height:50px; border-radius: 5px; align: center" value="Paint Me!" id="paintButton" onclick="paint();"/>
 
     <br/>
     <br/>
 
 
-    <div>
-        <button style="width: 50px; height: 50px" onclick="prev();"> <img src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_left.gif"></button>
+    <div id="slides">
+        <button style="width: 40px; height: 40px" onclick="prev();"> <img src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_left.gif"></button>
         <img id="slider" src="http://www.sololearn.com/uploads/slider/1.jpg"
              width="200px" height="100px" style=" border-radius: 15px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 5);"/>
-        <button style="width: 50px; height: 50px" onclick="next();"> <img src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_right.gif"></button>
+        <button style="width: 40px; height:40px" onclick="next();"> <img src="http://blogforce9dev-developer-edition.ap1.force.com/img/arrow2_picklist_right.gif"></button>
     </div>
     <script src="demo.js"></script>
 </center>
